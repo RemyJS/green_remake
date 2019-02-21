@@ -25,8 +25,8 @@ h2{
   color: #A33410;
 }
 nav{
-  /* background: black;
-  background-image: url(../images/topbg.jpg); */
+  background: black;
+  background-image: url(../images/topbg.jpg);
   height: 25px;
   color:white;
   text-align: center;
@@ -162,7 +162,6 @@ article li:hover{
 .two{
   display: flex;
   justify-content: space-evenly;
-  widows: 100%;
 }
 figure{
   margin: 10px 0;
@@ -231,7 +230,7 @@ footer{
   font-weight: bold;
 }
 /*  адапитрование */
-@media (max-width:1187px) {
+@media(max-width: 1187px) {
   main{
     margin-left:0;
     margin-right:0;
@@ -241,5 +240,36 @@ footer{
   }
   .fbanner{
     margin: 0;
+  }
+  main{
+    background-color: #fff;
+  }
+}
+@media(max-width: 780px){
+  main{
+    background-color: rgb(27, 154, 212);
+  }
+  .banner{
+    background: none;
+  }
+  .banner-logo{
+    background: url(../images/banner760.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+  }
+  .banner-logo img{
+    display: none
+  }
+  .two{
+    flex-wrap: wrap;
+  }
+  .fbanner{
+    background: url(../images/footer.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
   }
 }
