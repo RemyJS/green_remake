@@ -63,7 +63,9 @@ nav a:hover {
   left: 223px;
   top: 25px;
 }
-
+#banner760 {
+  display: none;
+}
 
 article{
   margin-right: 30px;
@@ -241,35 +243,65 @@ footer{
   .fbanner{
     margin: 0;
   }
-  main{
-    background-color: #fff;
-  }
+
 }
 @media(max-width: 780px){
   main{
-    background-color: rgb(27, 154, 212);
+    /* background-color: rgb(27, 154, 212); */
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .content{
+    border: none;
+    padding: 0;
+    width: 80%;
   }
   .banner{
     background: none;
+    height: auto;
   }
   .banner-logo{
-    background: url(../images/banner760.jpg) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    display: none;
   }
   .banner-logo img{
-    display: none
+    display: none;
   }
+  #banner760{
+    display: block;
+  }
+  .left-col{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-right: 0;
+  }
+  .left-col h2{
+    text-align: center;
+    margin-top: 0;
+  }
+  .left-col ul{
+    padding-left:0; 
+  }
+  .left-col li{
+    /* font-size: 22px; */
+    padding-bottom: 10px;
+   
+  }
+
   .two{
     flex-wrap: wrap;
   }
+  .three{
+    flex-wrap: wrap;
+  }
+  footer {
+    display: block;
+    height: auto;
+
+  }
   .fbanner{
-    background: url(../images/footer.jpg) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%;
+    background:none;
+    width: auto;
+    padding-top: 20px;
   }
 }
